@@ -1,4 +1,5 @@
-body {
+
+ body {
   width: 100%;
   margin: 0 auto;
   overflow-x: hidden;
@@ -69,7 +70,7 @@ nav li:hover {
   color: black;
   font-size: 24px;
   letter-spacing: 5px;
-  transition: 1s;
+  transition: 0.5s;
 }
 
 .dropbtn {
@@ -172,7 +173,7 @@ nav li:hover {
 
 .malay {
   float: left;
-  margin-right: 30px;
+  
   font-weight: bold;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("malay.jpg");
   height: 300px;
@@ -184,6 +185,7 @@ nav li:hover {
 
 .chinese {
   float: left;
+    margin-left:2%;
   font-weight: bold;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("chinese.jpg");
   height: 300px;
@@ -193,7 +195,8 @@ nav li:hover {
 }
 
 .indian {
-  float: right;
+  float: left;
+    margin-left:2%;
   font-weight: bold;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("indian.jpg");
   height: 300px;
@@ -203,12 +206,11 @@ nav li:hover {
 }
 
 .text {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin-top:30%;
+ 
   color: white;
   font-size: 30px;
-  margin:80px;
+  
 }
 
 .container2:hover {
@@ -217,6 +219,7 @@ nav li:hover {
 
 .text:hover {
   text-decoration: underline;
+     transform: scale(2, 2);
 }
 
 footer {
