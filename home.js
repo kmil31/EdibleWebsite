@@ -1,3 +1,5 @@
+/*eslint no-undef: "error"*/
+/*eslint-env browser*/
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 function myFunction() {
@@ -17,4 +19,14 @@ window.onclick = function(event) {
       }
     }
   }
+}
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("header").style.top = "0";
+  } else {
+    document.getElementById("header").style.top = "-150px";
+  }
+  prevScrollpos = currentScrollPos;
 }
