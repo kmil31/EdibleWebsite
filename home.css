@@ -12,9 +12,14 @@
   position: fixed;
   z-index: 1;
   top: 0;
+    transition: top 0.2s ease-in-out;
   width: 100%;
   margin: 0 auto;
   height: 150px;
+}
+
+.nav-up {
+  top: -40px; // same as header height. use variables in LESS/SASS
 }
 
 h1 {
@@ -257,3 +262,4 @@ footer {
   margin-right: 100px;
 
 }
+
