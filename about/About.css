@@ -69,16 +69,6 @@ body {
     background-size: cover;
   }
 
-.button{
-    margin-left: 47%;
-    margin-right: 45%;
-}
-
-.button:hover{
-  background-image: none;
-  cursor: pointer;
-}
-
   .more{
     font-family: comic sans ms;
     width:700px;
