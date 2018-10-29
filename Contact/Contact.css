@@ -1,0 +1,60 @@
+
+.textbox{
+    font-size:50px;
+    margin-top:150px;
+    width:100%;
+    height:auto;
+    background-color: darkslategray;
+    float:left;
+    text-align:center;
+    font-family: Oswald;
+    
+    
+}
+
+.textfields{
+    float:left;
+    width:40%;
+    height:50%;
+    
+}
+
+.yummy{
+    width:100%;
+    margin-top:2%;
+    font-size:auto;
+}
+
+.submit{
+    font-family:sans-serif;
+    font-size:17px;
+    margin:auto;
+    border: solid gray 3px;
+    
+}
+
+.names{
+    margin-left:20%;
+    float:left;
+    width:10%;
+    height:50%;
+    font-family:Montserrat;
+    
+}
+.jobs{
+    font-family:Montserrat;
+    float:left;;
+    width:20%;;
+    height:50%;
+    
+
+}
+
+.pic1{
+    
+    width:5%;
+    height:auto;
+    float:left;
+    
+}
+
