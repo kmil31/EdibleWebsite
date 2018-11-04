@@ -2,7 +2,7 @@ body {
   width: 100%;
   margin: 0 auto;
   overflow-x: hidden;
-  background-image:linear-gradient(to top,  #d9d9d9, white);
+  background-image: white;
   height:700px;
 }
 
@@ -51,6 +51,7 @@ body {
 
 #img {
 	border: 2px solid black;
+	margin-top: 20px;
 }
 
   .img1{
