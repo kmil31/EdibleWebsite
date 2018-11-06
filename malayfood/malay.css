@@ -190,11 +190,10 @@
   color: #333333;
   font-size: 16px;
   font-family: sans-serif;
-  margin-top: -13%;
+  margin-top: -17%;
   width: 100%;
   text-align: center;
   height: 50px;
-  margin-left: 120px;
 }
 
 .view {
@@ -208,7 +207,7 @@
   float: right;
   font-weight: bold;
   border-radius: 5px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   cursor: pointer;
 }
 /*----------body ends-------*/
