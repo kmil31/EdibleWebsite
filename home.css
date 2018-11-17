@@ -130,10 +130,10 @@ nav li:hover {
 
 /*-----------css background image starts----------*/
 
-.container1 {
+#container1 {
   margin: 0 auto;
   margin-top: 155px;
-  background-image: url("background.jpg");
+  transition:0.5s;
   filter: opacity(0.7);
   height: 470px;
   background-position: center;

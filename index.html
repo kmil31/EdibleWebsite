@@ -36,7 +36,7 @@
       </div>
     </div>
 
-    <div class="container1">
+    <div id="container1">
       <div class="content">
         <h3 style="font-size: 50px">Malaysian Cuisine</h3>
         <p style="font-size: 20px;text-align:center;">A peek of the enigmatic flavors in Malaysia</p>
@@ -70,6 +70,8 @@
         </div>
       </div>
     </div>
+         
+
 
     <footer class="footer">
       <div class="words">
@@ -83,6 +85,45 @@
 
       </div>
     </footer>
-
+   
+    <script>
+    
+    var i=0;
+    var images=[];
+    var time=3000;
+        
+        
+        images[0]= "slide1.jpg";
+        images[1]= 'slide2.jpg';
+        images[2]= 'slide3.jpg';
+        
+           var x =document.getElementById('container1');
+          
+        
+        function changeImg(){
+            
+        
+           x.style.backgroundImage="url("  + images[i] + ")";
+            
+            if(i <images.length -1)
+                {
+                    i++;
+                }
+            
+            else{
+                i=0;
+            }
+                    
+                    setTimeout("changeImg()",time);
+                }
+            
+        
+        window.onload=changeImg;
+        
+        
+    
+    </script>
+    
+    
   </body>
 </html>
