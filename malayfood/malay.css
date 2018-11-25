@@ -228,7 +228,6 @@
 }
 
 /*----------body ends-------*/
-
 .footer {
   width: 100%;
   background: #d9d9d9;
@@ -237,7 +236,8 @@
   bottom: 0;
   left: 0;
 	position:absolute;
-	margin-bottom: -3300px;
+	margin-bottom: -2200px;
+  z-index: 1;
 	list-style: none;
 	font-family: Oswald;
   height: 100px;
