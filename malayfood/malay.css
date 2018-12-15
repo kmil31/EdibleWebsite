@@ -140,11 +140,11 @@
 .text h1 {
   color: red;
   font-size: 24px;
-  margin-top: -8%;
+  margin-top: -6%;
   text-align: center;
   width: 100%;
   cursor: pointer;
-  margin-left: 60%;
+  margin-left: 58%;
 }
 
 /* .text h1:hover {
