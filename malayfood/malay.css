@@ -140,12 +140,11 @@
 .text h1 {
   color: red;
   font-size: 24px;
-  margin-top: -13%;
+  margin-top: -8%;
   text-align: center;
   width: 100%;
   cursor: pointer;
   margin-left: 60%;
-  text-align: justify;
 }
 
 /* .text h1:hover {
@@ -161,7 +160,7 @@
   text-align: center;
   height: 50px;
   margin-left:120px;
-
+  width: 100%;
 }
 
 .NasiLemak {
@@ -306,7 +305,7 @@
   bottom: 0;
   left: 0;
 	position:absolute;
-	margin-bottom: -2200px;
+	margin-bottom: -2100px;
   z-index: 1;
 	list-style: none;
 	font-family: Oswald;
