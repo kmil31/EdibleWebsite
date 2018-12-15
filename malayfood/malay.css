@@ -89,7 +89,7 @@
 }
 
 .tab-content {
-  height: 111rem;
+  height: 120rem;
   position: absolute;
   z-index: 1;
   top: 2.75em;
@@ -134,25 +134,23 @@
   margin-left: 4%;
   position: relative;
   margin-top: 10px;
-  margin-bottom: 4%;
+  margin-bottom: 1%;
 }
 
 .text h1 {
   color: red;
   font-size: 24px;
-  margin-top: -5%;
+  margin-top: -10%;
   text-align: center;
   width: 100%;
   cursor: pointer;
-  margin-left: 60%;
-  text-align: justify;
+/*   margin-left: 60%;
+  text-align: justify; */
 }
 
-.text h1:hover {
+/* .text h1:hover {
   text-decoration: underline;
-
-
-}
+} */
 
 .text p {
   color: #333333;
@@ -164,6 +162,71 @@
   height: 50px;
   margin-left:120px;	
   	
+}
+
+.NasiLemak {
+  float: left;
+  padding-left: 0.3%;
+  margin: 0 auto;
+
+}
+
+.AsamPedas {
+  float: right;
+  padding-right: 5%;
+  margin-left: 10%;
+  padding-right: 2px;
+  padding-left: 2px;
+  margin: 0 auto;
+}
+
+.Tempoyak {
+  float: left;
+  padding-left: 0.3%;
+  margin: 0 auto;
+
+}
+
+.MiBandung {
+  float: right;
+  padding-right: 5%;
+  margin-left: 10%;
+  padding-right: 2px;
+  padding-left: 2px;
+  margin: 0 auto;
+}
+
+.Currypuff {
+  float: left;
+  padding-left: 0.3%;
+  margin: 0 auto;
+
+}
+
+.Keria{
+  float: right;
+  padding-right: 5%;
+  margin-left: 10%;
+  padding-right: 2px;
+  padding-left: 2px;
+  margin: 0 auto;
+}
+
+.Onde {
+  float: left;
+  padding-left: 0.3%;
+  margin: 0 auto;
+
+}
+
+.KuihSaguMerah{
+  float: right;
+  padding-right: 5%;
+  margin-left: 10%;
+  padding-right: 2px;
+  padding-left: 2px;
+  margin: 0 auto;
+  padding-top: 15px;
 }
 
 /*-----------------popups---------------------*/
