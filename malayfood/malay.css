@@ -89,7 +89,7 @@
 }
 
 .tab-content {
-  height: 118rem;
+  height: 111rem;
   position: absolute;
   z-index: 1;
   top: 2.75em;
@@ -140,7 +140,7 @@
 .text h1 {
   color: red;
   font-size: 24px;
-  margin-top: -10%;
+  margin-top: -12%;
   text-align: center;
   width: 100%;
   cursor: pointer;
@@ -160,7 +160,7 @@
   width: 100%;
   text-align: center;
   height: 50px;
-/*   margin-left:120px;	 */
+  margin-left:120px;	
   	
 }
 
