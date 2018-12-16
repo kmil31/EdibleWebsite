@@ -145,7 +145,7 @@ table, tr, td {
   padding-right: 10px;
 }
 
-.user {
+/* .user {
   margin-top: 10px;
   padding-bottom: 10px;
   border: 1px solid black;
@@ -167,7 +167,7 @@ table, tr, td {
   margin-right: 3%;
   margin-bottom: 10px;
   cursor: pointer;
-}
+} */
 
 footer {
   width: 100%;
