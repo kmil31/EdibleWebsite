@@ -2,11 +2,14 @@
 <html lang="en" dir="ltr">
   <head>
     <script src="/EdibleWebsite/home.js"></script>
-    <script src="tab.js"></script>
+    <script src="popup.js"></script>
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="indian.css">
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title></title>
     <meta charset="utf-8">
 
     <title>Indian Food</title>
@@ -46,104 +49,320 @@
     <div class="container">
       <div class="tabs">
 
-<!-- /*------------------------tab 1-----------------------*/ -->
-        <div class="tab">
-          <input type="radio" name="css-tabs" id="tab-1" checked class="tab-switch">
-          <label for="tab-1" class="tab-label">Main Dish</label>
-          <div class="tab-content">
-            <div class="box one">
-              <div class="tandoori">
-                <img src="tandoori.jpg" alt="" style="height: 360px; width: 420px;">
-                <div class="text">
-                  <h1>Tandoori Chicken</h1>
-                  <p>Chicken dish prepared by roasting chicken marinated in yoghurt and spices in a tandoor,
-                    a cylindrical clay oven</p>
-                </div>
-              </div>
-              <button type="button" name="button" class="view"><a href="#"></a>View more</button>
-            </div>
+  <div class="tab">
+      <input type="radio" name="css-tabs" id="tab-1" checked class="tab-switch">
+      <label for="tab-1" class="tab-label">Main Dish</label>
+      <div class="tab-content">
 
-            <div class="box two">
-              <div class="curry">
-                <img src="curry.jpg" alt="" style="height: 360px; width: 420px;">
-                <div class="text">
-                  <h1>Mutton Curry</h1>
-                  <p>A curry dish that is prepared from mutton and vegetables.
-                    Mutton curry was originally prepared heated by a fire in a large pot</p>
-                </div>
-              </div>
-              <button type="button" name="button" class="view"><a href="#"></a>View more</button>
+        <div class="box one">
+          <div class="tandoori">
+            <img src="tandoori.jpg" alt="tandoori" style="height:360px; width:420px">
+            <div class="text">
+              <h1>Tandoori Chicken</h1>
+              <p>Chicken dish prepared by roasting chicken marinated in yoghurt and spices in a tandoor,
+                a cylindrical clay oven</p>
             </div>
-
-            <div class="box three">
-              <div class="nkandar">
-                <img src="nasikandar.jpg" alt="" style="height: 360px; width: 420px;">
-                <div class="text">
-                  <h1>Nasi Kandar</h1>
-                  <p>A meal of steamed rice which can be plain or mildly flavoured,
-                    and served with a variety of curries and side dishes</p>
-                </div>
-              </div>
-              <button type="button" name="button" class="view"><a href="#"></a>View more</button>
-            </div>
-
-            <div class="box four">
-              <div class="thosai">
-                <img src="thosai.jpg" alt="" style="height: 360px; width: 420px;">
-                <div class="text">
-                  <h1>Thosai</h1>
-                  <p>A type of pancake made from a fermented batter. It is somewhat similar to a crepe in appearance.
-                    Its main ingredients are rice and black gram</p>
-                </div>
-              </div>
-              <button type="button" name="button" class="view"><a href="#"></a>View more</button>
-            </div>
-
           </div>
-
-        </div>
-
-<!-- /*----------------second tab-----------------*/ -->
-        <div class="tab">
-          <input type="radio" name="css-tabs" id="tab-2" class="tab-switch">
-          <label for="tab-2" class="tab-label">Side dish</label>
-          <div class="tab-content">
-            <div class="box five">
-              <div class="vadai">
-                <img src="vadai.jpg" alt="" style="height: 360px; width: 420px;">
-                <div class="text">
-                  <h1>Vadai</h1>
-                  <p>A category of savoury fried snacks</p>
+              <button type="button" name="button" onclick="openModal1()">View more</button>
+              <div class="modal" id="myModal1" >
+                <div class="modal-content">
+                  <span class="close" onclick="closeModal1()">&times;</span>
+                  <p>Suggested Restaurant</p>
+                  <h2>Al Qawiy Tandoori Chicken</h2>
+                  <div class="star">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                  </div>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3983.9332812989614!2d101.7137663!3d3.1123551!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc3607850846d1%3A0x3e09dfdb1b3a1436!2sAl+Qawiy+Tandoori+Chicken!5e0!3m2!1sen!2smy!4v1544955717275" width="450" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
               </div>
-              <button type="button" name="button" class="view"><a href="#"></a>View more</button>
             </div>
 
-            <div class="box six">
-              <div class="putu">
-                <img src="putu.jpg" alt="" style="height: 360px; width: 420px;">
-                <div class="text">
-                  <h1>Putu Mayam</h1>
-                  <p> Also known as Idiyappam, consisting of rice flour pressed into noodle form and then steamed</p>
+              <div class="box two">
+                <div class="curry">
+                  <img src="curry.jpg" alt="curry" style="height:360px; width:420px">
+                  <div class="text">
+                    <h1>Mutton Curry</h1>
+                    <p>A curry dish that is prepared from mutton and vegetables.
+                      Mutton curry was originally prepared heated by a fire in a large pot</p>
+                  </div>
                 </div>
+                    <button type="button" name="button" onclick="openModal2()">View more</button>
+                    <div class="modal" id="myModal2" >
+                      <div class="modal-content">
+                        <span class="close" onclick="closeModal2()">&times;</span>
+                        <p>Suggested Restaurant</p>
+                        <h2>Big Sam Curry House</h2>
+                        <div class="star">
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star"></span>
+                        </div>
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3984.0332847177706!2d101.7392569!3d3.0857915!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc35ba1e105b1f%3A0x57464c9c71160389!2sBig+Sam+Curry+House!5e0!3m2!1sen!2smy!4v1544955830372" width="450" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                      </div>
+                    </div>
               </div>
-              <button type="button" name="button" class="view"><a href="#"></a>View more</button>
-            </div>
 
-            <div class="box seven">
-              <div class="muruku">
-                <img src="muruku.jpg" alt="" style="height: 360px; width: 420px;">
-                <div class="text">
-                  <h1>Murukku</h1>
-                  <p>A savoury, crunchy snack originating from the Indian subcontinent.
-                    The snack's name derives from the Tamil word for "twisted", which refers to its shape</p>
+              <div class="box three">
+                <div class="nkandar">
+                  <img src="nasikandar.jpg" alt="kandar" style="height:360px; width:420px">
+                  <div class="text">
+                    <h1>Nasi Kandar</h1>
+                    <p>A meal of steamed rice which can be plain or mildly flavoured,
+                      and served with a variety of curries and side dishes</p>
                 </div>
+                </div>
+                    <button type="button" name="button" onclick="openModal3()">View more</button>
+                    <div class="modal" id="myModal3" >
+                      <div class="modal-content">
+                        <span class="close" onclick="closeModal3()">&times;</span>
+                        <p>Suggested Restaurant</p>
+                        <h2>Restoran Nasi Kandar Segambut</h2>
+                        <div class="star">
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                        </div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d63737.213997516985!2d101.6692836393428!3d3.2054949025027453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d3.2562756999999998!2d101.7334628!4m5!1s0x31cc47d3f4ac1adb%3A0x95e6870b063be46e!2snasi+kandar!3m2!1d3.1964118999999998!2d101.6655815!5e0!3m2!1sen!2smy!4v1544956055229" width="450" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                      </div>
+                    </div>
               </div>
-              <button type="button" name="button" class="view"><a href="#"></a>View more</button>
-            </div>
 
+              <div class="box four">
+                <div class="thosai">
+                  <img src="thosai.jpg" alt="thosai" style="height:360px; width:420px">
+                  <div class="text">
+                    <h1>Thosai</h1>
+                    <p>A type of pancake made from a fermented batter. It is somewhat similar to a crepe in appearance.
+                      Its main ingredients are rice and black gram</p>
+                </div>
+                </div>
+                    <button type="button" name="button" onclick="openModal4()">View more</button>
+                    <div class="modal" id="myModal4" >
+                      <div class="modal-content">
+                        <span class="close" onclick="closeModal4()">&times;</span>
+                        <p>Suggested Restaurant</p>
+                        <h2>Thosai Cafe</h2>
+                        <div class="star">
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                        </div>
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d127474.95086301956!2d101.60767904040672!3d3.201295863032953!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d3.2562756999999998!2d101.7334628!4m5!1s0x31cc4f48323a3eb7%3A0x4f2292c6137d5707!2sthosai+restaurant!3m2!1d3.1586988!2d101.6130994!5e0!3m2!1sen!2smy!4v1544956182211" width="450" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                      </div>
+                    </div>
+              </div>
+
+              <div class="box five">
+                <div class="chapati">
+                  <img src="chapati.jpg" alt="chapati" style="height:360px; width:420px">
+                  <div class="text">
+                    <h1>Chapati</h1>
+                    <p>An unleavened flatbread made of whole wheat flour known as atta,
+                      mixed into dough with water and optional salt in a mixing utensil
+                      called a parat, and is cooked on a flat skillet</p>
+                </div>
+                </div>
+                    <button type="button" name="button" onclick="openModal5()">View more</button>
+                    <div class="modal" id="myModal5" >
+                      <div class="modal-content">
+                        <span class="close" onclick="closeModal5()">&times;</span>
+                        <p>Suggested Restaurant</p>
+                        <h2>MA Chapati House</h2>
+                        <div class="star">
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star"></span>
+                        </div>
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d63737.48093536888!2d101.69319918933985!3d3.201207403298594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d3.2562756999999998!2d101.7334628!4m5!1s0x31cc3655d9109307%3A0xfcffff5f9279bd56!2schapati!3m2!1d3.146149!2d101.75039439999999!5e0!3m2!1sen!2smy!4v1544956306536" width="450" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                      </div>
+                    </div>
+              </div>
+
+              <div class="box six">
+                <div class="bananaLeaf">
+                  <img src="bananaLeaf.jpg" alt="banana" style="height:360px; width:420px">
+                  <div class="text">
+                    <h1>Banana Leaf Rice</h1>
+                    <p>White rice is served on a banana leaf with an assortment of vegetables,
+                      pickles, appalam and other regional condiments usually sour, salty or spicy</p>
+                </div>
+                </div>
+                    <button type="button" name="button" onclick="openModal6()">View more</button>
+                    <div class="modal" id="myModal6" >
+                      <div class="modal-content">
+                        <span class="close" onclick="closeModal6()">&times;</span>
+                        <p>Suggested Restaurant</p>
+                        <h2>Puchong Mess Banana Leaf Rice</h2>
+                        <div class="star">
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star"></span>
+                        </div>
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d127482.5076099202!2d101.60953144023745!3d3.1399829585643744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d3.2562756999999998!2d101.7334628!4m5!1s0x31cdb4af400b7a4d%3A0x865d4ec2ca6c6033!2sbanana+leaf+rice!3m2!1d3.0256946!2d101.6228082!5e0!3m2!1sen!2smy!4v1544956440525" width="450" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                      </div>
+                    </div>
+              </div>
+      </div>
+</div>
+
+<!-- div 2 -->
+<div class="tab">
+  <input type="radio" name="css-tabs" id="tab-2" class="tab-switch">
+  <label for="tab-2" class="tab-label">Side dish</label>
+  <div class="tab-content">
+
+    <div class="box seven">
+      <div class="vadai">
+        <img src="vadai.jpg" alt="vadai" style="height:360px; width:420px">
+        <div class="text">
+          <h1>Vadai</h1>
+          <p>A category of savoury fried snacks</p>
+      </div>
+      </div>
+          <button type="button" name="button" onclick="openModal7()">View more</button>
+          <div class="modal" id="myModal7" >
+            <div class="modal-content">
+              <span class="close" onclick="closeModal7()">&times;</span>
+              <p>Suggested Restaurant</p>
+              <h2>SS15 Best Vadai Stall</h2>
+              <div class="star">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+              </div>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.0606026663268!2d101.58676471410628!3d3.0784952977582236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4c5e98a3022d%3A0xdb4151f4c99f6350!2sSS15+Best+Vadai+Stall!5e0!3m2!1sen!2smy!4v1544952919109" width="450" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+            </div>
           </div>
-        </div>
+    </div>
+
+    <div class="box eight">
+      <div class="putu">
+        <img src="putu.jpg" alt="putu" style="height:360px; width:420px">
+        <div class="text">
+          <h1>Putu Mayam</h1>
+          <p>Also known as Idiyappam, consisting of rice flour pressed into noodle form and then steamed</p>
+      </div>
+      </div>
+          <button type="button" name="button" onclick="openModal8()">View more</button>
+          <div class="modal" id="myModal8" >
+            <div class="modal-content">
+              <span class="close" onclick="closeModal8()">&times;</span>
+              <p>Suggested Restaurant</p>
+              <h2>Mahasu Food Catering</h2>
+              <div class="star">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+              </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.8263328863445!2d101.73093451410645!3d3.140515097713248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc37ec83b43133%3A0x55cc06f3efe6d9e0!2sMahasu+Food+Catering+(Putu+Mayam%2C+Indian+Muslim+Breakfast)!5e0!3m2!1sen!2smy!4v1544954281371" width="450" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+            </div>
+          </div>
+    </div>
+
+    <div class="box nine">
+      <div class="muruku">
+        <img src="muruku.jpg" alt="muruku" style="height:360px; width:420px">
+        <div class="text">
+          <h1>Muruku</h1>
+          <p>A savoury, crunchy snack originating from the Indian subcontinent.
+            The snack's name derives from the Tamil word for "twisted", which refers to its shape</p>
+      </div>
+      </div>
+          <button type="button" name="button" onclick="openModal9()">View more</button>
+          <div class="modal" id="myModal9" >
+            <div class="modal-content">
+              <span class="close" onclick="closeModal9()">&times;</span>
+              <p>Suggested Restaurant</p>
+              <h2>Syarikat Haja Haliq</h2>
+              <div class="star">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+              </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d127479.18908456412!2d101.62449444031178!3d3.1670543884595945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d3.2562756999999998!2d101.7334628!4m5!1s0x31cc4bd1f25c0d93%3A0x7bd70c7521455ba8!2smuruku+FACTORY!3m2!1d3.079259!2d101.6585219!5e0!3m2!1sen!2smy!4v1544955098437" width="450" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+          </div>
+    </div>
+
+    <div class="box ten">
+      <div class="idli">
+        <img src="idli.jpg" alt="idli" style="height:360px; width:420px">
+        <div class="text">
+          <h1>Idli</h1>
+          <p>A type of savoury rice cake made by steaming a batter consisting of
+            fermented black lentilsand rice</p>
+      </div>
+      </div>
+          <button type="button" name="button" onclick="openModal10()">View more</button>
+          <div class="modal" id="myModal10" >
+            <div class="modal-content">
+              <span class="close" onclick="closeModal10()">&times;</span>
+              <p>Suggested Restaurant</p>
+              <h2>Restoran Murugan Idli Kaddai</h2>
+              <div class="star">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+              </div>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.104886877694!2d101.57746551410705!3d3.324254997580031!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc425b6d177e19%3A0x9cc401320648acd!2sRestoran+Murugan+Idli+Kaddai!5e0!3m2!1sen!2smy!4v1544955267289" width="450" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+          </div>
+    </div>
+
+    <div class="box eleven">
+      <div class="puri">
+        <img src="puri.jpg" alt="idli" style="height:360px; width:420px">
+        <div class="text">
+          <h1>Puri</h1>
+          <p>An unleavened deep-fried bread. It is eaten for breakfast or as a snack or light meal.
+            It is usually served with a savory curry or bhaji</p>
+      </div>
+      </div>
+          <button type="button" name="button" onclick="openModal11()">View more</button>
+          <div class="modal" id="myModal11" >
+            <div class="modal-content">
+              <span class="close" onclick="closeModal11()">&times;</span>
+              <p>Suggested Restaurant</p>
+              <h2>Restoran Anuja</h2>
+              <div class="star">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63738.74324177049!2d101.62350597269433!3d3.1808543070710935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc49d153e2dc31%3A0x7203bd0f2bbdeecd!2sRestoran+Anuja!5e0!3m2!1sen!2smy!4v1544955499723" width="450" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+          </div>
+    </div>
+
+  </div>
+
+</div>
 
       </div>
 
