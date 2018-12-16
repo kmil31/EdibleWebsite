@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <script src="/EdibleWebsite/home.js"></script>
+    <script src="popup.js"></script>
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="malay.css">
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
@@ -27,7 +28,7 @@
                 <a href="/EdibleWebsite/indianfood/indian.html">Indian</a>
               </div>
 
-            <li><a href="#">Popular</a></li>
+            <li><a href="/EdibleWebsite/popular/Popular.html">Popular</a></li>
             <li><a href="/EdibleWebsite/about/About.html">About</a></li>
             <li><a href="/EdibleWebsite/Contact/Contact.html">Contact</a></li>
 
@@ -51,8 +52,8 @@
 <label for="tab-1" class="tab-label">Main Dish</label>
 <div class="tab-content">
 
-  <div class="box one">
-    <div class="NasiLemak">
+ <div class="box one">
+    <div class="NasiLemak" id="NasiLemak">
       <img src="malay4.jpg" alt="" style="height: 360px; width: 420px;">
       <div class="text">
         <h1>Nasi Lemak</h1>
@@ -60,11 +61,27 @@
         It is considered as Malaysia national dish. </p>
       </div>
     </div>
-    <button type="button" name="button" class="view" id="myBtn6">View more</button>
+    <button type="button" name="button" onclick="openModal1()">View more</button>
+    <div class="modal" id="myModal1" >
+      <div class="modal-content">
+        <span class="close" onclick="closeModal1()">&times;</span>
+        <p>Suggested Restaurant</p>
+        <h2>Paree's Corner (Best Nasi Lemak)</h2>
+        <div class="star">
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d127476.67544182827!2d101.64584294036808!3d3.1874069733459973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d3.256588!2d101.7332167!4m5!1s0x31cc498377dd7b67%3A0x94aead25a7915060!2sbest+nasi+lemak!3m2!1d3.1314203!2d101.68733449999999!5e0!3m2!1sen!2smy!4v1544966616671" width="450" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+    </div>
+
   </div>
 
   <div class="box two">
-    <div class="AsamPedas">
+    <div class="AsamPedas" id="AsamPedas">
       <img src="malay9.jpg" alt="" style="height: 360px; width: 420px;">
       <div class="text">
         <h1>Asam Pedas</h1>
@@ -72,11 +89,26 @@
         In Malaysia, it is most popular in Melaka.</p>
       </div>
     </div>
-    <button type="button" name="button" class="view" id="myBtn7">View more</button>
+    <button type="button" name="button" onclick="openModal2()">View more</button>
+      <div class="modal" id="myModal2" >
+        <div class="modal-content">
+          <span class="close" onclick="closeModal2()">&times;</span>
+          <p>Suggested Restaurant</p>
+          <h2>Asam Pedas Zink</h2>
+          <div class="star">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d510093.0207632143!2d101.53184563834002!3d2.7862378349792993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d3.2537976!2d101.7349993!4m5!1s0x31d1f8a870db9947%3A0x61795b698436ca58!2sbest+asam+pedas+in+melaka!3m2!1d2.3186884!2d102.074156!5e0!3m2!1sen!2smy!4v1544967123987" width="450" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
   </div>
 
   <div class="box four">
-    <div class="NasiKerabu">
+    <div class="NasiKerabu" id="NasiKerabu">
       <img src="malay5.jpg" alt="" style="height: 360px; width: 420px;">
       <div class="text">
         <h1>Nasi Kerabu</h1>
@@ -84,11 +116,27 @@
         rice is eaten with dried fish or fried chicken, crackers, pickles and other salads.</p>
       </div>
     </div>
-    <button type="button" name="button" class="view" id="myBtn8">View more</button>
+    <button type="button" name="button" onclick="openModal3()">View more</button>
+    <div class="modal" id="myModal3" >
+      <div class="modal-content">
+        <span class="close" onclick="closeModal3()">&times;</span>
+        <p>Suggested Restaurant</p>
+        <h2>Nasi Kerabu Golok Pantai Dalam</h2>
+        <div class="star">
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d127477.56458619835!2d101.62449444034816!3d3.18022257868091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d3.2537976!2d101.7349993!4m5!1s0x31cc4a2ed4c37ca9%3A0xc7695825385e5406!2sbest+nasi+kerabu!3m2!1d3.1073768!2d101.66958729999999!5e0!3m2!1sen!2smy!4v1544967397262" width="450" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+    </div>
+
   </div>
 
   <div class="box five">
-    <div class="NasiDagang">
+    <div class="NasiDagang" id="NasiDagang">
       <img src="main1.jpg" alt="" style="height: 360px; width: 420px;">
       <div class="text">
         <h1>Nasi Dagang</h1>
@@ -96,11 +144,27 @@
         fish curry and extra ingrediants such as pickled cucumber and carrots.</p>
       </div>
     </div>
-    <button type="button" name="button" class="view" id="myBtn9">View more</button>
+    <button type="button" name="button" onclick="openModal4()">View more</button>
+    <div class="modal" id="myModal4" >
+      <div class="modal-content">
+        <span class="close" onclick="closeModal4()">&times;</span>
+        <p>Suggested Restaurant</p>
+        <h2>Nasi Dagang Kampung Baru</h2>
+        <div class="star">
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d127474.31856586943!2d101.64600704042087!3d3.2063730092631135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d3.2537976!2d101.7349993!4m5!1s0x31cc48278559318d%3A0xdbad1f556c503682!2sbest+nasi+dagang+in+kl!3m2!1d3.1630504999999998!2d101.706183!5e0!3m2!1sen!2smy!4v1544967884652" width="450" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+    </div>
+
   </div>
 
   <div class="box six">
-    <div class="Tempoyak">
+    <div class="Tempoyak" id="Tempoyak">
       <img src="main2.jpg" alt="" style="height: 360px; width: 420px;">
       <div class="text">
         <h1>Patin Tempoyak</h1>
@@ -108,11 +172,26 @@
           often mixed with coconut milk curries or pounded with chilies into a spicy dip.</p>
       </div>
     </div>
-    <button type="button" name="button" class="view" id="myBtn10">View more</button>
+    <button type="button" name="button" onclick="openModal5()">View more</button>
+    <div class="modal" id="myModal5" >
+      <div class="modal-content">
+        <span class="close" onclick="closeModal5()">&times;</span>
+        <p>Suggested Restaurant</p>
+        <h2>SNZ Patin Tempoyak</h2>
+        <div class="star">
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254962.12872211548!2d101.48564957463535!3d3.151785048426911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4d0fd50e2d9f%3A0xb83ac53765cc4dc7!2sSNZ+Patin+Tempoyak+%26+Ikan+Bakar+Bersambal!5e0!3m2!1sen!2smy!4v1544968049284" width="450" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+    </div>
   </div>
 
   <div class="box seven">
-    <div class="MiBandung">
+    <div class="MiBandung" id="MiBandung">
       <img src="main3.jpg" alt="" style="height: 360px; width: 420px;">
       <div class="text">
         <h1>Mi Bandung</h1>
@@ -120,52 +199,25 @@
         name derives from the literal meaning of the word in Malay languange which is mixed.</p>
       </div>
     </div>
-    <button type="button" name="button" class="view" id="myBtn11">View more</button>
+    <button type="button" name="button" onclick="openModal6()">View more</button>
+      <div class="modal" id="myModal6" >
+        <div class="modal-content">
+          <span class="close" onclick="closeModal6()">&times;</span>
+          <p>Suggested Restaurant</p>
+          <h2>Mee Bandung Muar JDM</h2>
+          <div class="star">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+          </div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d63737.21851118646!2d101.69319918934274!3d3.2054224525161943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d3.2537976!2d101.7349993!4m5!1s0x31cc37af527ed94d%3A0xe3987c91fb7fbf8b!2sbest+mee+bandung!3m2!1d3.1601272!2d101.7464937!5e0!3m2!1sen!2smy!4v1544968157434" width="450" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
   </div>
 </div>
 
-<div id="myModal" class="modal">
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <p>LASJDLKAHSKD</p>
-    <img src="kuih9.jpg">
-    <h3> mksdgc8is </h3>
-    <p>uhjbnskzxrctyguhijo</p>
-  </div>
-</div>
-
-<script>
-
-var span = document.getElementsByClassName("close")[0];
-
-// Get the <span> element that closes the modal
-btn6.onclick = function() {
-  modal.style.display = "block";
-}
-
-btn7.onclick = function() {
-  modal.style.display = "block";
-}
-
-btn8.onclick = function() {
-  modal.style.display = "block";
-}
-
-btn9.onclick = function() {
-  modal.style.display = "block";
-}
-
-btn10.onclick = function() {
-  modal.style.display = "block";
-}
-
-btn11.onclick = function() {
-  modal.style.display = "block";
-}
-
-
-</script>
 </div>
 
 <!-- /*----------------second tab-----------------*/ -->
@@ -175,29 +227,59 @@ btn11.onclick = function() {
 <div class="tab-content">
 
   <div class="box nine">
-    <div class="Currypuff">
+    <div class="Currypuff" id="Currypuff">
       <img src="malay3.jpg" alt="" style="height: 360px; width: 420px;">
       <div class="text">
         <h1>Curry Puff</h1>
         <p>A deep-fried, semi-circular pastry filled with curried fillings.</p>
       </div>
     </div>
-    <button type="button" name="button" class="view" id="myBtn">View More</button>
+    <button type="button" name="button" onclick="openModal7()">View more</button>
+    <div class="modal" id="myModal7" >
+      <div class="modal-content">
+        <span class="close" onclick="closeModal7()">&times;</span>
+        <p>Suggested Restaurant</p>
+        <h2>Curry Puff Mr Yeong</h2>
+        <div class="star">
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d63737.50058593528!2d101.67202133933965!3d3.200891553357224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d3.2537976!2d101.7349993!4m5!1s0x31cc49d254bd96f9%3A0xb2e5df349f22be49!2sbest+curry+puff!3m2!1d3.1487233999999997!2d101.6982058!5e0!3m2!1sen!2smy!4v1544968386781" width="450" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+    </div>
   </div>
 
   <div class="box ten">
-    <div class="Keria">
+    <div class="Keria" id="Keria">
       <img src="malay7.jpg" alt="" style="height: 360px; width: 420px;">
       <div class="text">
         <h1>Keria</h1>
         <p>A sweet vegan potato doughnut that requires no baking.</p>
       </div>
     </div>
-      <button type="button" name="button" class="view" id="myBtn1">View More</button>
+    <button type="button" name="button" onclick="openModal8()">View more</button>
+  <div class="modal" id="myModal8" >
+    <div class="modal-content">
+      <span class="close" onclick="closeModal8()">&times;</span>
+      <p>Suggested Restaurant</p>
+      <h2>Keria Antarabangsa Hjh Rahmah</h2>
+      <div class="star">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+      </div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d1020234.3760702717!2d101.37038392813751!3d2.729890524610836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d3.2536397999999997!2d101.7353107!4m5!1s0x31d1f1add4f465cd%3A0xf65bda174ed1ef1f!2skeria+antarabangsa!3m2!1d2.2063516!2d102.218711!5e0!3m2!1sen!2smy!4v1544972707803" width="450" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+  </div>
   </div>
 
   <div class="box twelve">
-    <div class="Onde">
+    <div class="Onde" id="Onde">
       <img src="kuih6.jpg" alt="" style="height: 360px; width: 420px;">
       <div class="text">
         <h1>Onde Onde</h1>
@@ -205,11 +287,27 @@ btn11.onclick = function() {
           and coated in grated coconut.</p>
       </div>
     </div>
-    <button type="button" name="button" class="view" id="myBtn2">View more</button>
+    <button type="button" name="button" onclick="openModal9()">View more</button>
+   <div class="modal" id="myModal9" >
+     <div class="modal-content">
+       <span class="close" onclick="closeModal9()">&times;</span>
+       <p>Suggested Restaurant</p>
+       <h2>Kedai Aku Dan Dia</h2>
+       <div class="star">
+         <span class="fa fa-star checked"></span>
+         <span class="fa fa-star checked"></span>
+         <span class="fa fa-star checked"></span>
+         <span class="fa fa-star"></span>
+         <span class="fa fa-star"></span>
+       </div>
+       <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d1020238.9327145885!2d101.37038392711084!3d2.7245184304966417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d3.2537976!2d101.7349993!4m5!1s0x31d1f1dc464d349f%3A0x7e16a9c31f72815!2skedai+aku+dan+dia+melaka!3m2!1d2.1954548!2d102.24745999999999!5e0!3m2!1sen!2smy!4v1544968818924" width="450" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+     </div>
+   </div>
+
   </div>
 
   <div class="box thirteen">
-    <div class="KuihSaguMerah">
+    <div class="KuihSaguMerah" id="KuihSaguMerah">
       <img src="kuih4.jpg" alt="" style="height: 360px; width: 420px;">
       <div class="text">
         <h1>Kuih Sagu Merah</h1>
@@ -217,11 +315,26 @@ btn11.onclick = function() {
           then, cut to desired pieces and rolled in salted fresh grated coconut.</p>
       </div>
     </div>
-    <button type="button" name="button" class="view" id="myBtn3">View more</button>
+    <button type="button" name="button" onclick="openModal10()">View more</button>
+    <div class="modal" id="myModal10" >
+      <div class="modal-content">
+        <span class="close" onclick="closeModal10()">&times;</span>
+        <p>Suggested Restaurant</p>
+        <h2>Geraikuih.com</h2>
+        <div class="star">
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d31867.888248276187!2d101.7176585673884!3d3.228485949561827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d3.2538709!2d101.7353107!4m5!1s0x31cc38317e6a35f3%3A0x3dd553a591972466!2sgeraikuih.com!3m2!1d3.2027886999999997!2d101.7465553!5e0!3m2!1sen!2smy!4v1544969024026" width="450" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+    </div>
   </div>
 
   <div class="box fourteen">
-    <div class="Ketayap">
+    <div class="Ketayap"  id="Ketayap">
       <img src="kuih5.jpg" alt="" style="height: 360px; width: 420px;">
       <div class="text">
         <h1>Ketayap</h1>
@@ -229,11 +342,26 @@ btn11.onclick = function() {
           pancake skin wrapping it.</p>
       </div>
     </div>
-    <button type="button" name="button" class="view" id="myBtn4">View more</button>
+    <button type="button" name="button" onclick="openModal11()">View more</button>
+    <div class="modal" id="myModal11" >
+      <div class="modal-content">
+        <span class="close" onclick="closeModal11()">&times;</span>
+        <p>Suggested Restaurant</p>
+        <h2>Tasty Kuih Nyonya</h2>
+        <div class="star">
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d254964.70253499591!2d101.45296592451587!3d3.1412635796856674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d3.2538709!2d101.7353107!4m5!1s0x31cdacaf21c4ac4b%3A0x65572cc892176d14!2snyonya+kuih+supplier+in+klang!3m2!1d3.0286811!2d101.4409991!5e0!3m2!1sen!2smy!4v1544969190974" width="450" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+    </div>
   </div>
 
   <div class="box sixteen">
-    <div class="Lekor">
+    <div class="Lekor" id="Lekor">
       <img src="kuih10.jpg" alt="" style="height: 360px; width: 420px;">
       <div class="text">
         <h1>Keropok Lekor</h1>
@@ -241,23 +369,23 @@ btn11.onclick = function() {
           state of Terengganu. It is made from fish and sago flour and seasoned with salt and sugar.</p>
       </div>
     </div>
-    <button type="button" name="button" class="view" id="myBtn5">View more</button>
+    <button type="button" name="button" onclick="openModal12()">View more</button>
+    <div class="modal" id="myModal12" >
+      <div class="modal-content">
+        <span class="close" onclick="closeModal12()">&times;</span>
+        <p>Suggested Restaurant</p>
+        <h2>DZ Keropok Lekor Enterprise</h2>
+        <div class="star">
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d63737.22061690768!2d101.66694258934272!3d3.2053886525224673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d3.2537976!2d101.7349993!4m5!1s0x31cc471c4184a661%3A0xb0a1004313b20b04!2sDZ+KEROPOK+LEKOR+ENTERPRISE%2C+E13%2C+Pasar+Tani+Borong+FAMA%2C+Selayang%2C+Jalan+Selayang+Baru%2C+68100+Batu+Caves%2C+Selangor!3m2!1d3.24391!2d101.665407!5e0!3m2!1sen!2smy!4v1544969336413" width="450" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+    </div>
   </div>
-
-<!-- The Modal -->
-
-<div id="myModal" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <p>LASJDLKAHSKD</p>
-    <img src="kuih11.jpg">
-    <h3> mksdgc8is </h3>
-    <p>uhjbnskzxrctyguhijo</p>
-  </div>
-
-</div>
 </div>
 </div>
 </div>
@@ -275,70 +403,6 @@ btn11.onclick = function() {
 
 </div>
 </footer>
-
-<script>
-// Get the modal
-var modal = document.getElementById('myModal');
-
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-var btn1 = document.getElementById("myBtn1");
-var btn2 = document.getElementById("myBtn2");
-var btn3 = document.getElementById("myBtn3");
-var btn4 = document.getElementById("myBtn4");
-var btn5 = document.getElementById("myBtn5");
-var btn6 = document.getElementById("myBtn6");
-var btn7 = document.getElementById("myBtn7");
-var btn8 = document.getElementById("myBtn8");
-var btn9 = document.getElementById("myBtn9");
-var btn10 = document.getElementById("myBtn10");
-var btn11 = document.getElementById("myBtn11");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on the button, open the modal
-
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-btn1.onclick = function() {
-  modal.style.display = "block";
-}
-
-btn2.onclick = function() {
-  modal.style.display = "block";
-}
-
-btn3.onclick = function() {
-  modal.style.display = "block";
-}
-
-btn4.onclick = function() {
-  modal.style.display = "block";
-}
-
-btn5.onclick = function() {
-  modal.style.display = "block";
-}
-
-btn6.onclick = function() {
-  modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-      modal.style.display = "none";
-  }
-}
-</script>
 
 </body>
 </html>
