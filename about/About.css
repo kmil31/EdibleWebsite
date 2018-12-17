@@ -127,17 +127,17 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-	position:absolute;
-	margin-bottom: -1200px;
-	list-style: none;
-	font-family: Oswald;
+  position:absolute;
+  margin-bottom: -1200px;
+  list-style: none;
+  font-family: Oswald;
   height: 100px;
 }
 
 .words ul{
   float: left;
   padding-right: 40px;
-  margin: 30px;
+  margin: 20px;
   list-style: none;
   text-transform: uppercase;
   color: #2e2eb8;
