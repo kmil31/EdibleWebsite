@@ -127,20 +127,22 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  position:absolute;
-  margin-bottom: -1200px;
-  list-style: none;
-  font-family: Oswald;
+	position:absolute;
+	margin-bottom: -1000px;
+	list-style: none;
+	font-family: Oswald;
   height: 100px;
 }
 
 .words ul{
   float: left;
-  margin: 15px;
+  padding-right: 50px;
+  margin: 30px;
   list-style: none;
   text-transform: uppercase;
   color: #2e2eb8;
   display: inline;
+  padding-left: 50px;
 }
 
 .words li {
@@ -149,8 +151,8 @@ body {
 
 .words a {
   font-size: 16px;
-  margin-left: 65px;
-  margin-right: 65px;
+  margin-left: 80px;
+  margin-right: 80px;
 }
 
 a{
