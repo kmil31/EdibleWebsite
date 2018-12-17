@@ -136,7 +136,7 @@ body {
 
 .words ul{
   float: left;
-  margin: 18px;
+  margin: 15px;
   list-style: none;
   text-transform: uppercase;
   color: #2e2eb8;
@@ -149,8 +149,8 @@ body {
 
 .words a {
   font-size: 16px;
-  margin-left: 75px;
-  margin-right: 75px;
+  margin-left: 65px;
+  margin-right: 65px;
 }
 
 a{
