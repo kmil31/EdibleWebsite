@@ -136,14 +136,13 @@ body {
 
 .words ul{
   float: left;
-  padding-right: 40px;
+  padding : 5px;
   margin: 20px;
   list-style: none;
   text-transform: uppercase;
   color: #2e2eb8;
   display: inline;
-  padding-left: 40px;
-/*   padding : 5px; */
+/*   padding-left: 40px; */
 }
 
 .words li {
