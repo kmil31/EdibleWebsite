@@ -1,164 +1,279 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <script src="/EdibleWebsite/home.js"></script>
-    <script src="tab.js"></script>
-    <link rel="stylesheet" href="home.css">
+    <meta charset="utf-8">
     <link rel="stylesheet" href="chinese.css">
+    <script src="popup.js"></script>
+    <script src="/EdibleWebsite/home.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <title>Chinese Food</title>
+    <link rel="shortcut icon" href="logo.PNG">
+    <title>Malay Food</title>
   </head>
   <body>
     <div class="header" id="header">
-      <div class="navbar">
-        <div class="name">
-          <h1>Edible.</h1>
-          <!-- <p>MALAYSIAN CUISINE<p> -->
-        </div>
-        <nav>
-          <ul>
-         <li><a href="/EdibleWebsite/index.html">Home</a></li>
-              <button onclick="myFunction()" class="dropbtn">Categories</button>
-              <div id="myDropdown" class="dropdown-content">
-                <a href="/EdibleWebsite/malayfood/malay.html">Malay</a>
-                <a href="chinese.html">Chinese</a>
-                <a href="/EdibleWebsite/indianfood/indian.html">Indian</a>
-              </div>
+       <div class="name">
+         <h1>Edible.</h1>
+       </div>
+       <nav>
+       <center>
+         <ul>
+           <li><a href="/EdibleWebsite/index.html">Home</a></li>
+           <li class="dropdown">
+             <a href="javascript:void(0)" class="dropbtn">Categories</a>
+             <div class="dropdown-content">
+               <a href="/EdibleWebsite/malayfood/malay.html">Malay</a>
+               <a href="/EdibleWebsite/chinesefood/chinese.html">Chinese</a>
+               <a href="/EdibleWebsite/indianfood/indian.html">Indian</a>
+             </div>
+           </li>
 
-            <li><a href="/EdibleWebsite/popular/popular.html">Popular</a></li>
-            <li><a href="/EdibleWebsite/about/About.html">About</a></li>
-            <li><a href="/EdibleWebsite/Contact/Contact.html">Contact</a></li>
+           <li><a href="/EdibleWebsite/popular/popular.html">Popular</a></li>
+           <li><a href="/EdibleWebsite/about/About.html">About</a></li>
+           <li><a href="/EdibleWebsite/Contact/Contact.html">Contact</a></li>
 
-          </ul>
-        </nav>
-        </div>
-      </div>
+         </ul>
+       </center>
+       </nav>
+     </div>
 
-    <div class="title">
-      <div class="titletext">
-        <h2 style="font-size: 70px">Chinese Food</h2>
-      </div>
+     <div class="title">
+       <div class="titletext">
+         <h2 style="font-size: 70px">Chinese Food</h2>
+       </div>
+     </div>
+
+    <div class="tab">
+      <button class="tablinks" onclick="openDish(event, 'Main')" id="tab1">Main Dish</button>
+      <button class="tablinks" onclick="openDish(event, 'Side')">Side Dish</button>
     </div>
 
-    <div class="container">
-      <div class="tabs">
-
-<!-- /*------------------------tab 1-----------------------*/ -->
-        <div class="tab">
-          <input type="radio" name="css-tabs" id="tab-1" checked class="tab-switch">
-          <label for="tab-1" class="tab-label">Main Dish</label>
-          <div class="tab-content">
-            <div class="box one">
-              <div class="tandoori">
-                <img src="peking.jfif" alt="" style="height: 360px; width: 420px;">
-                <div class="text">
-                  <h1>Peking Duck</h1>
-                  <p>Delicious roasted duck with crispy skin, served with vegetables and garlic sauce.</p>
-                </div>
-              </div>
-              <button type="button" name="button" class="view"><a href="#"></a>View more</button>
-            </div>
-
-            <div class="box two">
-              <div class="curry">
-                <img src="bpbeef.jpg" alt="" style="height: 360px; width: 420px;">
-                <div class="text">
-                  <h1>Black Pepper Beef</h1>
-                  <p>A meat dish consisting of beef fried in black pepper sauce and 
-                    vegetables.</p>
-                </div>
-              </div>
-              <button type="button" name="button" class="view"><a href="#"></a>View more</button>
-            </div>
-
-            <div class="box three">
-              <div class="nkandar">
-                <img src="szechuan.jpg" alt="" style="height: 360px; width: 420px;">
-                <div class="text">
-                  <h1>Szechuan Chicken</h1>
-                  <p>Succulent chicken cooked with szechuan peppercorns and other
-                    herbs. Very spicy and flavorful.</p>
-                </div>
-              </div>
-              <button type="button" name="button" class="view"><a href="#"></a>View more</button>
-            </div>
-
-            <div class="box four">
-              <div class="thosai">
-                <img src="charkway.jpg" alt="" style="height: 360px; width: 420px;">
-                <div class="text">
-                  <h1>Char Kway Teow</h1>
-                  <p>An iconic noodle dish, consisting of stir fried flat rice noodles
-                    with various sauces and meats, topped with vegetables.</p>
-                </div>
-              </div>
-              <button type="button" name="button" class="view"><a href="#"></a>View more</button>
-            </div>
-
-          </div>
-
+<!-- ----------------------------------tab1------------------------------------------------ -->
+    <div id="Main" class="tabcontent">
+  <center>  <div class="row">
+    <div class="column">
+        <img src="peking.jfif" alt="PekingDuck">
+        <div class="menuWord">
+          <h1>Peking Duck</h1>
+          <p>Delicious roasted duck with crispy skin, served with hoisin sauce</p>
         </div>
 
-<!-- /*----------------second tab-----------------*/ -->
-        <div class="tab">
-          <input type="radio" name="css-tabs" id="tab-2" class="tab-switch">
-          <label for="tab-2" class="tab-label">Side dish</label>
-          <div class="tab-content">
-            <div class="box five">
-              <div class="vadai">
-                <img src="siewmai.jpg" alt="" style="height: 360px; width: 420px;">
-                <div class="text">
-                  <h1>Siew Mai</h1>
-                  <p>A type of dumpling consisting of wonton skin wrapped in ground meat.</p>
-                </div>
-              </div>
-              <button type="button" name="button" class="view"><a href="#"></a>View more</button>
+        <button type="button" onclick="openModal1()" class="view">View More</button>
+        <div class="modal" id="myModal1">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal1()">&times;</span>
+            <p>Suggested Restaurant</p>
+            <h2>Restoran Norazlina Chong</h2>
+            <div class="star">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
             </div>
-
-            <div class="box six">
-              <div class="putu">
-                <img src="springrolls.jpg" alt="" style="height: 360px; width: 420px;">
-                <div class="text">
-                  <h1>Spring Rolls</h1>
-                  <p> Fresh vegetables wrapped in deliciously crispy fried rice flour skin.</p>
-                </div>
-              </div>
-              <button type="button" name="button" class="view"><a href="#"></a>View more</button>
-            </div>
-
-            <div class="box seven">
-              <div class="muruku">
-                <img src="moon.jpg" alt="" style="height: 360px; width: 420px;">
-                <div class="text">
-                  <h1>Moon Cake</h1>
-                  <p>A traditional baked delicacy made in honor of the Mid-Autumn Festival.This festival is in appreciation of the moon and lunar cycle.</p>
-                </div>
-              </div>
-              <button type="button" name="button" class="view"><a href="#"></a>View more</button>
-            </div>
-
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127476.50602908379!2d101.66836903484243!3d3.1887740149452277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8ec1be06f5ef5ddc!2sRestoran+Norazlina+Chong!5e0!3m2!1sen!2smy!4v1545037658420" width="450" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
           </div>
         </div>
-
       </div>
 
+      <div class="column">
+        <img src="bpbeef.jpg" alt="BlackPepperBeef">
+        <div class="menuWord">
+          <h1>Black Pepper Beef</h1>
+          <p>A meat dish consisting of beef fried in black pepper sauce and vegetables</p>
+        </div>
+        <button type="button" name="button" onclick="openModal2()" class="view" >View More</button>
+        <div class="modal" id="myModal2">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal2()">&times;</span>
+            <p>Suggested Restaurant</p>
+            <h2>Muhammad Chow Chinese Muslim Kitchen</h2>
+            <div class="star">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </div>
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127476.42221587208!2d101.66836874443064!3d3.1894501121487178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4bbeee1add1ba502!2sMohammad+Chow+Chinese+Muslim+Kitchen!5e0!3m2!1sen!2smy!4v1545037850002" width="450" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+
+            <div class="column">
+              <img src="szechuan.jpg" alt="Szechuan Chicken">
+              <div class="menuWord">
+                <h1>Szechuan Chicken</h1>
+                <p>Crispy, succulent chicken cooked with szechuan
+                  peppercorns and other various herbs and spices.
+                  Very spicy and full of flavour.</p>
+                </div>
+              <button type="button" name="button" onclick="openModal3()" class="view" >View More</button>
+              <div class="modal" id="myModal3">
+                <div class="modal-content">
+                  <span class="close" onclick="closeModal3()">&times;</span>
+                  <p>Suggested Restaurant</p>
+                  <h2>Amber Chinese Muslim Restaurant</h2>
+                  <div class="star">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star" ></span>
+                  </div>
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127485.34861603366!2d101.54783265972294!3d3.1166203403280055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4a2bb5c00001%3A0x8f5197d2aae94fe7!2sAmber%2C+Chinese+Muslim+Restaurant!5e0!3m2!1sen!2smy!4v1545037929203" width="450" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+              </div>
+              </div>
+            </div>
+
+            <div class="column">
+              <img src="charkway.jpg" alt="CharKuayTeow">
+              <div class="menuWord">
+                <h1>Char Kuay Teow</h1>
+                <p>An iconic Malaysian noodle dish, consisting of stir fried flat rice noodles with various sauces and meats, topped with vegetables. A must try for visitors to Malaysia.</p>
+                </div>
+              <button type="button" name="button" onclick="openModal4()" class="view" >View More</button>
+              <div class="modal" id="myModal4">
+                <div class="modal-content">
+                  <span class="close" onclick="closeModal4()">&times;</span>
+                  <p>Suggested Restaurant</p>
+                  <h2>Malaya Char Kuay Teow</h2>
+                  <div class="star">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star" ></span>
+                  </div>
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127485.30764293346!2d101.54783251450695!3d3.116958520188627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc379ce155535d%3A0xae8a120ea1fba2ce!2sMalaya+Char+Kuey+Teow!5e0!3m2!1sen!2smy!4v1545038022685" width="450" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+
+            
+    </div></center>
+    </div>
+      
+      
+      <!-- SECOND TAB -->
+
+    <div id="Side" class="tabcontent">
+      <center> <div class="row">
+        <div class="column">
+          <img src="siewmai.jpg" alt="Siew Mai">
+          <div class="menuWord">
+            <h1>Siew Mai</h1>
+            <p>A type of dumpling consisting of light,fluffy wonton skin wrapped around delicate and savoury fillings.</p>
+          </div>
+
+          <button type="button" name="button" onclick="openModal7()" class="view">View More</button>
+          <div class="modal" id="myModal7">
+            <div class="modal-content">
+              <span class="close" onclick="closeModal7()">&times;</span>
+              <p>Suggested Restaurant</p>
+              <h2>Siewmai Stall @ Pasar Malam Taman Pertama</h2>
+              <div class="star">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+              </div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.9281855568142!2d101.72938406472753!3d3.113702604237928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc36751c5f82dd%3A0xac745e135b66871d!2sPasar+Malam+Taman+Pertama!5e0!3m2!1sen!2smy!4v1545038121628" width="450" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+              </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <img src="springrolls.jpg" alt="SpringRolls">
+          <div class="menuWord">
+            <h1>Spring Rolls</h1>
+            <p> Fresh, crunchy and nutritious vegetabls wrapped in deliciously crispy fried skin that is made of rice flour.</p>
+          </div>
+
+          <button type="button" name="button" onclick="openModal8()" class="view">View More</button>
+          <div class="modal" id="myModal8">
+            <div class="modal-content">
+              <span class="close" onclick="closeModal8()">&times;</span>
+              <p>Suggested Restaurant</p>
+              <h2>Taiwan Crispy Spring Rolls</h2>
+              <div class="star">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+              </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127485.68082253225!2d101.66153210964796!3d3.113877051287917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc35a4c7f58a4d%3A0x13ee1e8071e8809d!2sTaiwan+Crispy+Spring+Roll!5e0!3m2!1sen!2smy!4v1545038320929" width="450" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <img src="moon.jpg" alt="Moon Cake">
+          <div class="menuWord">
+            <h1>Moon Cake</h1>
+            <p> A type of pastry filled with a thick,rich filling of red bean or lotus seed paste surrounded by a thin layer of layer of flaky crust. A traditional dish made in honor of the Lunar Festival</p>
+          </div>
+
+          <button type="button" name="button" onclick="openModal9()" class="view">View More</button>
+          <div class="modal" id="myModal9">
+            <div class="modal-content">
+              <span class="close" onclick="closeModal9()">&times;</span>
+              <p>Suggested Restaurant</p>
+              <h2>Oven Nuyun</h2>
+              <div class="star">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127485.6398848581!2d101.66153196443156!3d3.114215236117189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc47853654aee5%3A0x4b4253cbaec6f2f4!2sOven+Nuyun+(Pengeluar+Mooncake+Halal)!5e0!3m2!1sen!2smy!4v1545038500714" width="450" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+
+       
+
+      
+
+      
+
+
+      </div></center>
     </div>
 
-    <footer class="footer">
+    <footer class="foot">
       <div class="words">
         <ul>
-          <li><a href="home.html" class="active"></a> home</li>
-          <li><a href="#"></a>categories</li>
-          <li><a href="#"></a>popular</li>
-          <li><a href="#"></a>about</li>
-          <li><a href="#"></a>contact</li>
+          <li><a href="/EdibleWebsite/index.html">home</a> </li>
+          <li><a href="#" class="current">categories</a></li>
+          <li><a href="/EdibleWebsite/popular/popular.html">popular</a></li>
+          <li><a href="/EdibleWebsite/about/About.html">about</a></li>
+          <li><a href="/EdibleWebsite/Contact/Contact.html">contact</a></li>
         </ul>
-
       </div>
     </footer>
+
+    <script>
+    function openDish(evt, dish) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(dish).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+      document.getElementById('tab1').click();
+    </script>
 
   </body>
 </html>
