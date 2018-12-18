@@ -268,5 +268,8 @@ a{
 	color:inherit;
 	
 }	
-	
+
+.active {
+	color: black;
+}
 
